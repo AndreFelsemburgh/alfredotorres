@@ -1,0 +1,57 @@
+.principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.principal .subtitulos {
+    color: #6e6ef5;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.meios_contato li {
+    font-size: 1.125rem;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.perfil p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    max-width: 55ch;
+}
+
+
+/* RESPONSIVIDADE */ 
+@media (max-width: 800px) {
+    .principal .subtitulos {
+        font-size: 1.5rem;
+    }
+
+    .meios_contato li  {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .perfil p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        max-width: initial;
+    }
+}
+
+
+/* RESPONSIVIDADE */ 
+
+@media (max-width: 500px) {
+    .principal{
+      padding: 20px;
+      gap: 40px;
+      grid-template-columns: 1fr;
+    }
+}

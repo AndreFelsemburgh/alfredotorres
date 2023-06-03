@@ -1,0 +1,164 @@
+.experiencias {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.skills {
+margin-bottom: 50px;
+position: relative;
+padding-top: 15px;
+}
+
+.skills::before {
+  content: '';
+  display: block;
+  width: 450px;
+  height: 5px;
+  background:#6e6ef5;
+  top: -20px;
+  left: -150px;
+  position: absolute;
+}
+
+.skills-lista li {
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 2;
+}
+
+.subtitulos {
+  color: #6e6ef5;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.habilidades {
+  padding-top: 40px;
+}
+
+.references-lista {
+  margin-bottom: 50px;
+}
+
+.references-lista .nome {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.references-lista .empresa span {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.experiences-lista {
+   padding: 10px 40px;
+}
+
+.experience-type {
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+h4 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+h4::before {
+  content: '';
+  display: block;
+  background: url(../img/arrow-circle.svg) no-repeat center center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: -55px;
+  top: -9px;
+}
+
+.experience-empresa {
+  text-transform: capitalize;
+  font-weight: 600;
+  display: block;
+  margin: 5px 0 10px;
+  font-size: 1.125rem
+}
+
+.experience-type .texto {
+  max-width: 60ch;
+  margin-bottom: 10px;
+}
+
+.experiences-points {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+/* RESPONSIVIDADE */ 
+
+@media (max-width: 900px) {
+  .skills::before {
+    width: 400px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .experiencias {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .subtitulos {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    padding: 0;
+  }
+  
+  .skills::before {
+    display: none;
+  }
+
+  .experiences {
+    grid-row: 1;
+  }
+
+  .habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiencias{
+    gap: 0 20px;
+  }
+
+  .experiences-lista {
+    padding: 10px 40px;
+ }
+ 
+  .habilidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .references-lista {
+    background: #6e6ef5;
+    color: #effdfe;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
